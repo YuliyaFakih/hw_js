@@ -1,0 +1,53 @@
+.image-container {
+    position: relative;
+    display: grid;
+    grid-auto-flow: column;
+    max-height: 150px;
+    overflow: hidden;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.image-container span {
+    z-index: 1;
+    position: absolute;
+    font-size: 36px;
+    font-weight: 900;
+    cursor: pointer;
+}
+
+.image-container span:first-child {
+    top: 57px;
+    left: 15px;
+    
+}
+
+.image-container span:last-child {
+    top: 57px;
+    right: 15px;
+}
+
+#image-container {
+    display: grid;
+    grid-auto-flow: column;
+    transition: .2s;
+}
+
+.pagination {
+	width: fit-content;
+    margin: 20px auto;
+}
+
+.pagination > div {
+    display: inline-block;
+    margin-right: 10px;
+    cursor: pointer;
+    background-color: #bab0b0;
+    border-radius: 50%;
+    height: 15px;
+    width: 15px;
+}
+
+.active {
+    background-color: black !important;
+}
